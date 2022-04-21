@@ -1,0 +1,230 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+ul {
+  list-style: none;
+}
+
+/*******
+*****
+navbar
+******
+*/
+
+.navbar {
+  background-color: rgb(25, 40, 63,.5);
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler i {
+  color: #fff;
+  font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search i {
+  color: var(--green-color);
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  transition: all 0.5s ease-in-out;
+}
+.main-btn:hover {
+  background-color: var(--green-color);
+}
+.sec-head::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+/*******
+*****
+navbar
+******
+*/
+
+.landing {
+background-image: url(../img/slider.jpg);
+background-position: center center;
+background-size: cover;
+}
+.landing .overlay {
+  background-color: rgb(25, 40, 63,.8);
+}
+.landing .overlay h1 {
+  font-size: 3.2rem;
+}
+
+/*******
+*****
+feature
+******
+*/
+.feature-item .icon-holder {
+  height: 200px;
+}
+.feature-item .icon-holder i {
+  transform: translateX(-50%);
+}
+.feature-item .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.feature-item .icon-holder .icon {
+  color: var(--green-color);
+}
+.feature-item h4 {
+  color: var(--yellow-color);
+}
+
+/*******
+*****
+portofolio
+******
+*/
+.portofolio {
+  background-color: var(--section-color);
+}
+.port-menue ul li {
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.port-menue ul li.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.port-menue ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.portofolio .box {
+  overflow: hidden;
+}
+.portofolio .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(51, 209, 204, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+.portofolio .box:hover::before {
+  transform: translateX(0);
+
+}
+
+
+
+/*******
+*****
+about us
+******
+*/
+
+.about-us .desc-hd {
+  max-width:500px ;
+}
+
+/*******
+*****
+team
+******
+*/
+
+.team {
+  background-color: var(--section-color);
+}
+
+.team-hd h2 {
+  color: var(--yellow-color);
+}
+.team .box-team h4{
+background-color: var(--green-color);
+color: white;
+}
+
+
+/*project*/
+.project {
+  background-color: var(--dark-color);
+}
+
+/*subscribe*/
+.subscribe{
+  background-color: var(--yellow-color)
+}
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+.subscribe input[type="email"]::placeholder {
+  color: #fff;
+}
+
+.subscribe input[type="submit"] {
+background-color: var(--dark-color);
+color: white;
+}
+
+
+/*footer*/
+.footer {
+  background-color: var(--dark-color);
+}
+.copy-right >span {
+  color: var(--green-color);
+}
+.copy-right div span {
+  color: var(--yellow-color);
+}
+.social li {
+  width: 20px;
+  height: 20px;
+}
+.social .facebook {
+  background-color:#1877f2;
+}
+.social .twitter {
+  background-color:#1da1f2;
+}
+.social .linked {
+  background-color:#0077b5;
+}
+.social .youtube {
+  background-color:#ff0000;
+}
